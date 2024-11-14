@@ -1,0 +1,7 @@
+.SvgStyle svg path {
+  fill: #277c78;
+}
+
+li {
+  flex-grow: 1;
+}
