@@ -1,0 +1,42 @@
+<ul [class]="styleUl">
+  <li
+    class="bg-beige-100 grow self-stretch flex items-center justify-center rounded-t-lg md:rounded-t-none md:justify-start md:p-5 md:mr-5"
+  >
+    <a routerLink="" routerLinkActive="active">
+      <svg-icon
+        src="assets/images/icon-nav-overview.svg"
+        name="overview"
+        class="SvgStyle"
+      ></svg-icon>
+    </a>
+  </li>
+  <li [class]="styleLi">
+    <a routerLink="transactions" routerLinkActive="active">
+      <svg-icon
+        src="assets/images/icon-nav-transactions.svg"
+        name="transactions"
+      ></svg-icon>
+    </a>
+  </li>
+  <li [class]="styleLi">
+    <a href="#">
+      <svg-icon
+        src="assets/images/icon-nav-budgets.svg"
+        name="budgets"
+      ></svg-icon>
+    </a>
+  </li>
+  <li [class]="styleLi">
+    <a href="#">
+      <svg-icon src="assets/images/icon-nav-pots.svg" name="pots"></svg-icon>
+    </a>
+  </li>
+  <li [class]="styleLi">
+    <a href="#">
+      <svg-icon
+        src="assets/images/icon-nav-recurring-bills.svg"
+        name="bills"
+      ></svg-icon>
+    </a>
+  </li>
+</ul>

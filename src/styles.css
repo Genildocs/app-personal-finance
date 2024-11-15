@@ -11,5 +11,5 @@
 }
 
 body {
-  @apply font-sans min-h-screen;
+  @apply font-sans min-h-screen bg-beige-100;
 }

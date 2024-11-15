@@ -8,7 +8,9 @@ import { PersonListComponent } from './person-list/person-list.component';
 import { SidebarDesktopComponent } from './sidebar-desktop/sidebar-desktop.component';
 import { SidebarMobileComponent } from './sidebar-mobile/sidebar-mobile.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
-import { HttpClient } from '@angular/common/http';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { IconsSidebarComponent } from './icons-sidebar/icons-sidebar.component';
+import { CardsComponent } from './cards/cards.component';
 @NgModule({
   declarations: [
     InputFieldsComponent,
@@ -18,8 +20,10 @@ import { HttpClient } from '@angular/common/http';
     PersonListComponent,
     SidebarDesktopComponent,
     SidebarMobileComponent,
+    IconsSidebarComponent,
+    CardsComponent,
   ],
-  imports: [CommonModule, AngularSvgIconModule],
+  imports: [CommonModule, AngularSvgIconModule, RouterLink, RouterLinkActive],
   exports: [
     InputFieldsComponent,
     ButtonsComponent,
@@ -28,6 +32,7 @@ import { HttpClient } from '@angular/common/http';
     PersonListComponent,
     SidebarDesktopComponent,
     SidebarMobileComponent,
+    CardsComponent,
   ],
 })
 export class ComponentsModule {}
