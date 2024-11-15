@@ -1,6 +1,6 @@
 <ul [class]="styleUl">
   <li
-    class="bg-beige-100 grow self-stretch flex items-center justify-center rounded-t-lg md:rounded-t-none md:justify-start md:p-5 md:mr-5"
+    class="bg-beige-100 grow self-stretch flex items-center justify-center rounded-t-lg md:rounded-t-none md:justify-start md:p-5 md:mr-5 relative isAfter"
   >
     <a routerLink="" routerLinkActive="active">
       <svg-icon
@@ -10,7 +10,10 @@
       ></svg-icon>
     </a>
   </li>
-  <li [class]="styleLi">
+  <li
+    [class]="styleLi"
+    class="hover:bg-beige-100 hover:grow hover:self-stretch hover:rounded-t-lg"
+  >
     <a routerLink="transactions" routerLinkActive="active">
       <svg-icon
         src="assets/images/icon-nav-transactions.svg"
@@ -18,7 +21,10 @@
       ></svg-icon>
     </a>
   </li>
-  <li [class]="styleLi">
+  <li
+    [class]="styleLi"
+    class="hover:bg-beige-100 hover:grow hover:self-stretch hover:rounded-t-lg"
+  >
     <a href="#">
       <svg-icon
         src="assets/images/icon-nav-budgets.svg"
@@ -26,12 +32,18 @@
       ></svg-icon>
     </a>
   </li>
-  <li [class]="styleLi">
+  <li
+    [class]="styleLi"
+    class="hover:bg-beige-100 hover:grow hover:self-stretch hover:rounded-t-lg"
+  >
     <a href="#">
       <svg-icon src="assets/images/icon-nav-pots.svg" name="pots"></svg-icon>
     </a>
   </li>
-  <li [class]="styleLi">
+  <li
+    [class]="styleLi"
+    class="hover:bg-beige-100 hover:grow hover:self-stretch hover:rounded-t-lg"
+  >
     <a href="#">
       <svg-icon
         src="assets/images/icon-nav-recurring-bills.svg"

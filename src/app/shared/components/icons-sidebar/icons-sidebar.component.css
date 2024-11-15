@@ -1,3 +1,16 @@
 .SvgStyle svg path {
   fill: #277c78;
 }
+
+li svg path:hover {
+  fill: #277c78;
+}
+
+.isAfter::after {
+  content: "";
+  background-color: #277c78;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+}

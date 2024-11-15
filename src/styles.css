@@ -13,3 +13,16 @@
 body {
   @apply font-sans min-h-screen bg-beige-100;
 }
+
+/* .isAfter::after {
+  content: "";
+  background-color: #277c78;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+} */
+
+.x {
+  @apply after:content-[''] after:bg-secondary-green after:w-full after:h-1 after:absolute after:bottom-0;
+}
